@@ -117,3 +117,32 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+
+/* Style for promotional text */
+.promo-text {
+    font-size: 2em; /* Large text size */
+    font-weight: bold;
+    color: #e74c3c; /* Red for urgency */
+    background-color: #f39c12; /* Yellow background */
+    padding: 10px 5px;
+    border-radius: 5px;
+    text-align: center;
+    animation: shake 5s ease-in-out infinite; /* Shaking animation for urgency */
+}
+
+/* Add an animation for shaking effect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Style for the disclaimer text */
+.promo-disclaimer {
+    font-size: 0.9em;
+    color: #34495e;
+    text-align: center;
+    margin-top: 10px;
+}

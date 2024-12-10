@@ -1,14 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get("lang");
+document.addEventListener('DOMContentLoaded', function () {
+    const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
 
-    if (lang === "fr") {
-        document.getElementById("title").textContent = "Mr. Pipe";
-        document.getElementById("subtitle").textContent = "Service Professionnel de Débouchage de Drains - Seulement 99$";
-        document.getElementById("description").style.display = "none";
-        document.getElementById("description-fr").style.display = "block";
-        document.getElementById("contact-title").textContent = "Contactez Mr. Pipe";
-        document.getElementById("instructions").style.display = "none";
-        document.getElementById("instructions-fr").style.display = "block";
+    if (lang === 'fr') {
+        // Show French elements, hide English ones
+        document.querySelectorAll('.lang-fr').forEach(function (element) {
+            element.style.display = 'block';
+        });
+        document.querySelectorAll('.lang-en').forEach(function (element) {
+            element.style.display = 'none';
+        });
+    } else {
+        // Show English elements, hide French ones
+        document.querySelectorAll('.lang-en').forEach(function (element) {
+            element.style.display = 'block';
+        });
+        document.querySelectorAll('.lang-fr').forEach(function (element) {
+            element.style.display = 'none';
+        });
     }
 });
