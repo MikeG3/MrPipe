@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to right, #e8f6f3, #fff);
+}
+
+header {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+.language-switcher {
+    top: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.language-switcher a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.language-switcher a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.hero-image {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.contact-section {
+    text-align: center;
+    background: #f0f4f5;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 30px;
+    background-color: #00796b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #004d40;
+}
+
+#disclaimer {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #666;
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
